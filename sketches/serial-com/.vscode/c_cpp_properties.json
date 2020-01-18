@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/home/hugo/.arduino15/packages/arduino/tools/**",
+                "/home/hugo/.arduino15/packages/arduino/hardware/avr/1.8.2/**"
+            ],
+            "forcedInclude": [
+                "/home/hugo/.arduino15/packages/arduino/hardware/avr/1.8.2/cores/arduino/Arduino.h"
+            ],
+            "compilerPath": "/usr/bin/gcc"
+        }
+    ],
+    "version": 4
+}

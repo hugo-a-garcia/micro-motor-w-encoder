@@ -1,0 +1,14 @@
+{
+  "name": "serial-com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "author": "hugo-a-garcia",
+  "license": "MIT",
+  "dependencies": {
+    "serialport": "^8.0.6"
+  }
+}
