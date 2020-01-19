@@ -21,5 +21,23 @@ void loop()
     {
         Serial.println(number);
         newData = false;
+
+        switch (number)
+        {
+        case 1:
+            Serial.println("ONE");
+            break;
+        case 2:
+            Serial.println("TWO");
+            break;
+        case 3:
+            Serial.println("THREE");
+            break;
+        case 4:
+            Serial.println("FOUR");
+            break;
+        default:
+            Serial.println("DEFAULT");
+        }
     }
 }
