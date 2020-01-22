@@ -1,0 +1,3 @@
+[submodule "electron/tau-motor-encoder"]
+	path = electron/tau-motor-encoder
+	url = https://github.com/hugo-a-garcia/tau-motor-encoder.git
