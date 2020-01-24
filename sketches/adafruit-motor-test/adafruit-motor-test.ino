@@ -51,42 +51,43 @@ void loop()
     if (Serial.available() > 0)
     {
         //receivedChar = Serial.read();
-        direction = Serial.parseInt();
-        if (direction > 0 & direction <= 5) {
-            newData = true;
-        }
+        direction = Serial.read();
+        newData = true;
+        // if (direction > 0 & direction <= 5) {
+        //     newData = true;
+        // }
         
     }
     if (newData == true)
     {
-        Serial.println(direction);
+        //Serial.println(direction);
         newData = false;
 
         switch (direction)
         {
-        case 1:
+        case 49:
             motor_M1->run(RELEASE);
             motor_M2->run(RELEASE);
             break;
-        case 2:
+        case 50:
             motor_M1->setSpeed(127);
             motor_M1->run(FORWARD);
             motor_M2->setSpeed(127);
             motor_M2->run(FORWARD);
             break;
-        case 3:
+        case 51:
             motor_M1->setSpeed(-127);
             motor_M1->run(BACKWARD);
             motor_M2->setSpeed(-127);
             motor_M2->run(BACKWARD);
             break;
-        case 4:
+        case 52:
             motor_M1->setSpeed(-127);
             motor_M1->run(BACKWARD);
             motor_M2->setSpeed(127);
             motor_M2->run(FORWARD);
             break;
-        case 5:
+        case 53:
             motor_M1->setSpeed(127);
             motor_M1->run(FORWARD);
             motor_M2->setSpeed(-127);

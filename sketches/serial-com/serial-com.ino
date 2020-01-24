@@ -1,6 +1,6 @@
 char receivedChar;
 boolean newData = false;
-long number = -1;
+int number;
 
 void setup()
 {
@@ -14,12 +14,14 @@ void loop()
     if (Serial.available() > 0)
     {
         //receivedChar = Serial.read();
-        number = Serial.parseInt();
+        //number = Serial.parseInt();
+        number = Serial.read();
         newData = true;
     }
     if (newData == true)
     {
-        Serial.println(number);
+        Serial.print(number);
+        Serial.println();
         newData = false;
 
         switch (number)
